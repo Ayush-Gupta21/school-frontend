@@ -84,7 +84,7 @@ const AdminHeader = ({history}) => {
         </div>
             <header >
                 <div className="header" >
-                    <Link to="/admin"><img src={logo} alt="Can't Load"></img></Link>
+                    <Link to="/admin"><img src="https://i.imgur.com/iTLnajN.png" alt="Can't Load"></img></Link>
                     <Hamburger clickMe={toggleNavbar}/>
                 </div>
                 <div className={`header1 ${addclass1}`} >
