@@ -25,7 +25,7 @@ const AddNotice= ({history}) => {
 
     const onSubmit = (event) => {
         event.preventDefault();
-        if(noticeHeading == "" || noticeContent == ""){
+        if(noticeHeading === "" || noticeContent === ""){
             toast.error("Input Can't Be Empty");
             return;
         }

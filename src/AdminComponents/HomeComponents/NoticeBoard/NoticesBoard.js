@@ -83,7 +83,7 @@ const NoticeBoard = () => {
                                         <div onClick={()=>showModal(notice, index)}>{notice.noticeHeading}</div>
                                     </div>
                                 )
-                            }
+                            } else{return(null)}
                         })}
                 </div>
             </div>

@@ -32,7 +32,7 @@ const UpdateLetsGetInspired = ({match, history}) => {
 
     useEffect(() => {
         preload(match.params.letsgetinspiredId);
-    }, [])
+    }, [match.params.letsgetinspiredId])
 
     const handleChange = event => {
         setQuote(event.target.value)

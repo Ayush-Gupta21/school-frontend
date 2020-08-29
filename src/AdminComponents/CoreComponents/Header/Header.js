@@ -20,7 +20,8 @@ const AdminHeader = ({history}) => {
         setCollapsed(!collapsed);
         console.log(collapsed);
     }
-    const open = collapsed ? "open" : "";
+    const open = collapsed ? "admin-open" : "";
+    const open1 = collapsed ? "admin-open-cover" : "admin-close-cover";
 
     // To fix Navbar-------------------------------
     const [addclass, setAddclass] = useState("")
@@ -38,7 +39,10 @@ const AdminHeader = ({history}) => {
 
     return(
         <div>
-            <div className={`side_drawer ${open}`}>
+            <div onClick={toggleNavbar} className={`admin-background-cover ${open1}`}
+            >
+            </div>
+            <div className={`admin-side_drawer ${open}`}>
             <div><span onClick={toggleNavbar}><i className="fas fa-times"></i>CLOSE</span></div>
             <ul>
             <li><Link style={currentTab(history, "/")} 
@@ -84,9 +88,9 @@ const AdminHeader = ({history}) => {
                     <Hamburger clickMe={toggleNavbar}/>
                 </div>
                 <div className={`header1 ${addclass1}`} >
-                    <Link to="/admin"><img src={logo} alt="Can't Load"></img></Link>
+                    <Link to="/admin"><img src="https://i.imgur.com/iTLnajN.png" alt="Can't Load"></img></Link>
                     <Hamburger clickMe={toggleNavbar}/>
-                </div>
+                </div> 
                 <nav className={addclass}>
                     <div className="nav_container">
                         <ul>

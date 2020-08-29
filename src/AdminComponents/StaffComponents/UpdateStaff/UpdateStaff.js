@@ -36,7 +36,7 @@ const UpdateStaff = ({match, history}) => {
 
     useEffect(() => {
         preload(match.params.staffId);
-    }, [])
+    }, [match.params.staffId])
 
     const handleChange = event => {
         setStaffPhotoURL(event.target.value)

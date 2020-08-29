@@ -102,24 +102,24 @@ const AlbumCard = () => {
     const deleteOnSubmit = (albumId) => {
         setLoader1(true)
         photos.map((photo)=>{
-            if(photo.album == albumId){
+            if(photo.album === albumId){
                 deleteAlbumPhoto(photo._id, "ayush", token)
                 .then(data=>{
                     if(data.error){
                         toast.error("Error Occured!")
                     }
                 })
-            }
+            } return(null)
         })
         videos.map((video)=>{
-            if(video.album == albumId){
+            if(video.album === albumId){
                 deleteAlbumVideo(video._id, "ayush", token)
                 .then(data=>{
                     if(data.error){
                         toast.error("Error Occured!")
                     }
                 })
-            }
+            } return(null)
         })
         deleteAlbum(albumId, "ayush", token)
         .then(data => {
@@ -178,15 +178,15 @@ const AlbumCard = () => {
                             <div className="admin-album-title-container">
                                 <div className="album-photo-container">
                                     {photos.map((photo, index)=> {
-                                        if(album._id == photo.album){
+                                        if(album._id === photo.album){
                                             array[arrayIndex] = `${photo.photoURL}`;
                                             arrayIndex = arrayIndex+1;
                                             if(array.length===1){
                                                 return(
-                                                    <img key={index} src={array[0]}></img>
+                                                    <img key={index} src={array[0]} alt="Can't Load"></img>
                                                 )
-                                            }
-                                        }    
+                                            } else{return(null)}
+                                        } else{return(null)}
                                     })}
                                 </div>
                                 <div className="album-card-title">

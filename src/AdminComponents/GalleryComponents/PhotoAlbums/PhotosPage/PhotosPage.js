@@ -190,15 +190,15 @@ const AdminPhotosPage = ({match}) => {
                 {!loader && <div style={{display: `${photoDisplay}`}}>
                 <div className="gallery-photos-container">
                     {photos.map((photo, index) => {
-                        if(photo.album == match.params.albumId){
+                        if(photo.album === match.params.albumId){
                             imagesForLightbox[index-1] = `${photo.photoURL}`;
                             return(
                                 <div key={index} className="photo-card-container">
-                                    <img onClick={()=>{setPhotoIndex(index-1);setIsOpen(true);}} src={photo.photoURL}></img>
+                                    <img onClick={()=>{setPhotoIndex(index-1);setIsOpen(true);}} src={photo.photoURL} alt="Can't Load"></img>
                                     <div id="delete-btn-in-photos-page" onClick={()=>popupFunction(photo._id)}><i className="far fa-trash-alt"></i></div>
                                 </div>
                             )
-                        }
+                        } else{return(null)}
                     })}
                 </div>
                 </div>}
@@ -212,22 +212,22 @@ const AdminPhotosPage = ({match}) => {
                 {!videosloader && <div style={{display: `${videoDisplay}`}}>
                     <div className="gallery-videos-container">
                         {videos.map((video, index) => {
-                            if(index == videos.length-1 && video.album != match.params.albumId && i==0){
+                            if(index === videos.length-1 && video.album !== match.params.albumId && i===0){
                                 return(
                                     <div>
-                                        <img src={dont} width="250" height="300"></img>
+                                        <img src={dont} width="250" height="300" alt="Can't Load"></img>
                                     </div>
                                 )
                             }
-                            if(video.album == match.params.albumId){
+                            if(video.album === match.params.albumId){
                                 i++;
                                 return(
                                     <div key={index} className="video-card-container">
-                                        <iframe src={video.videoURL} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        <iframe src={video.videoURL} title="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     <div id="delete-btn-in-photos-page" onClick={()=>popupFunction1(video._id)}><i className="far fa-trash-alt"></i></div>
                                     </div>
                                 )
-                            }
+                            } else{return(null)}
                             
                         })}
                     </div>

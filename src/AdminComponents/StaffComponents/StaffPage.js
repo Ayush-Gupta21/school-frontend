@@ -122,7 +122,7 @@ const AdminStaffPage = () => {
                             <div className="staff-card">
                                 <Link style={{color: "white", textDecoration: "none"}} to={`/admin/staff/${staff._id}`}>
                                     <div className="staff-photo-description-container">
-                                        <img src={`${staff.staffphotoURL}`}></img>
+                                        <img src={`${staff.staffphotoURL}`} alt="Can't Load"></img>
                                         <div className="staff-card-description">
                                             <div className="staff-name">{staff.name}</div>
                                             <div className="staff-description">{staff.description}</div>

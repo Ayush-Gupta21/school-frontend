@@ -67,15 +67,15 @@ const AlbumCard = (props) => {
                             <div className="album-title-container">
                                 <div className="album-photo-container">
                                     {photos.map((photo, index)=> {
-                                        if(album._id == photo.album){
+                                        if(album._id === photo.album){
                                             array[arrayIndex] = `${photo.photoURL}`;
                                             arrayIndex = arrayIndex+1;
                                             if(array.length===1){
                                                 return(
-                                                    <img key={index} src={array[0]}></img>
+                                                    <img key={index} src={array[0]} alt="Can't Load"></img>
                                                 )
-                                            }
-                                        }    
+                                            } else{return(null)}
+                                        } else{return(null)}
                                     })}
                                 </div>
                                 <div className="album-card-title">

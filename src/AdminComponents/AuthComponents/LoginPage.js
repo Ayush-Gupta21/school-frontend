@@ -14,7 +14,7 @@ function LoginPage({history}) {
     const [passwordType, setPasswordType] = useState("password")
 
     const toggleClass = () => {
-        if(eyeClass == "fas fa-eye-slash"){
+        if(eyeClass === "fas fa-eye-slash"){
             setEyeClass("fas fa-eye")
             setPasswordType("text")
         } else{

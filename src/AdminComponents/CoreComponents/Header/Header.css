@@ -107,15 +107,15 @@ header ul li .nav-link:hover{
         height: 80px;
     }
     .header1 img{
-        width: 440px;
-        margin: 1.2% auto auto 1%;
+        width: 410px;
+        margin: 0.8% auto auto 1%;
     }
 }
 
 @media only screen and (max-width: 500px){
     .header1 img{
         width: 330px;
-        margin: 1.7% auto auto 1%;
+        margin: 0.4% auto auto 1%;
     }
     .header1{
         padding-top: 10px;
@@ -126,7 +126,7 @@ header ul li .nav-link:hover{
 @media only screen and (max-width: 380px){
     .header1 img{
         width: 320px;
-        margin: 2.5% auto auto 1%;
+        margin: 1% auto auto 1%;
     }
     .header1{
         background-color: #B80924;
@@ -135,8 +135,8 @@ header ul li .nav-link:hover{
 
 @media only screen and (max-width: 370px){
     .header1 img{
-        width: 310px;
-        margin: 2.5% auto auto 1%;
+        width: 300px;
+        margin: 1.4% auto auto 1%;
     }
     .header1{
         /* height: 70px; */
@@ -147,7 +147,7 @@ header ul li .nav-link:hover{
 @media only screen and (max-width: 355px){
     .header1 img{
         width: 270px;
-        margin: 2.5% auto auto 1%;
+        margin: 1% auto auto 1%;
     }
     .header1{
         height: 70px;

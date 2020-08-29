@@ -14,24 +14,24 @@
     position: fixed;
     top: 0;
     z-index: 1000;
-}
+} 
 
-.header{
+.user-header{
     height: 100px;
     width: 100%;
     background-color: #B80924;
 }
 
-.header1{
+.user-header1{
     display: none;
     height: 100px;
     width: 100%;
     background-color: #B80924;
 }
 
-.header img{
-    width: 600px;
-    margin: 0.7% auto auto 1%;
+.user-header img{
+    width: 500px;
+    margin: 0.5% auto auto 1%;
 }
 
 nav{
@@ -84,14 +84,14 @@ header ul li .nav-link:hover{
     header ul li:nth-child(1) .nav-link{
         margin-left: 1.2vw;
     }
-    .header{
+    .user-header{
         height: 80px;
         background-color: #B80924;
     }
     
-    .header img{
-        width: 500px;
-        margin: 0.5% auto auto 1%;
+    .user-header img{
+        width: 400px;
+        margin: 0.7% auto auto 1%;
     }
 }
 
@@ -99,57 +99,57 @@ header ul li .nav-link:hover{
     nav{
         display: none;
     }
-    .header{
+    .user-header{
         display: none;
     }
-    .header1{
+    .user-header1{
         display: block;
         height: 80px;
     }
-    .header1 img{
-        width: 440px;
-        margin: 1.2% auto auto 1%;
+    .user-header1 img{
+        width: 400px;
+        margin: 0.8% auto auto 1%;
     }
 }
 
 @media only screen and (max-width: 500px){
-    .header1 img{
+    .user-header1 img{
         width: 330px;
-        margin: 1.7% auto auto 1%;
+        margin: 0.6% auto auto 1%;
     }
-    .header1{
+    .user-header1{
         padding-top: 10px;
         box-sizing: border-box;
     }
 }
 
 @media only screen and (max-width: 380px){
-    .header1 img{
+    .user-header1 img{
         width: 320px;
-        margin: 2.5% auto auto 1%;
+        margin: 0.8% auto auto 1%;
     }
-    .header1{
+    .user-header1{
         background-color: #B80924;
     }
 }
 
 @media only screen and (max-width: 370px){
-    .header1 img{
-        width: 310px;
-        margin: 2.5% auto auto 1%;
+    .user-header1 img{
+        width: 300px;
+        margin: 1.3% auto auto 1%;
     }
-    .header1{
+    .user-header1{
         /* height: 70px; */
         background-color: #B80924;
     }
 }
 
 @media only screen and (max-width: 355px){
-    .header1 img{
+    .user-header1 img{
         width: 270px;
-        margin: 2.5% auto auto 1%;
+        margin: 0.6% auto auto 1%;
     }
-    .header1{
+    .user-header1{
         height: 70px;
         background-color: #B80924;
     }

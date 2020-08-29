@@ -32,7 +32,7 @@ const UpdatePrincipal = ({match, history}) => {
 
     useEffect(() => {
         preload(match.params.principalId);
-    }, [])
+    }, [match.params.principalId])
 
     const handleChange = event => {
         setPrincipalphotoURL(event.target.value)
@@ -43,7 +43,7 @@ const UpdatePrincipal = ({match, history}) => {
 
     const onSubmit = (event) => {
         event.preventDefault();
-        if(principalphotoURL == "" || content == ""){
+        if(principalphotoURL === "" || content === ""){
             toast.error("Input Can't Be Empty");
             return;
         }

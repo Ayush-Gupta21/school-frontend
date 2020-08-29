@@ -5,7 +5,7 @@ import "./ModalWindow.css"
  
 const ModalWindow = ({notice, isOpen, hideModal}) => {
     return(
-        <Modal style= {{marginTop: "100px"}} style={{top: "0"}} show={isOpen} onHide={hideModal}>
+        <Modal style= {{top: "0"}} show={isOpen} onHide={hideModal}>
             <Modal.Header>
                 <Modal.Title>
                     {notice.noticeHeading}

@@ -21,7 +21,7 @@ const AddFooterPhoto= ({history}) => {
 
     const onSubmit = (event) => {
         event.preventDefault();
-        if(footerphotoURL == ""){
+        if(footerphotoURL === ""){
             toast.error("Please add URL");
             return;
         }

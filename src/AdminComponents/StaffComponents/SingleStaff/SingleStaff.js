@@ -24,7 +24,7 @@ const AdminSingleStaff = ({match}) => {
 
     useEffect(() => {
         preload(match.params.staffId);
-    }, [])
+    }, [match.params.staffId])
 
     // loader----------------------------------------------------------
     const [loader, setLoader] = useState(false)
@@ -47,7 +47,7 @@ const AdminSingleStaff = ({match}) => {
             />
             {!loader && <div><div className="single-staff-header-container"> 
                 <div className="single-staff-image-container">
-                    <img src={`${staff.staffphotoURL}`}></img>
+                    <img src={`${staff.staffphotoURL}`} alt="Can't Load"></img>
                 </div>
                 <div>
                     <div className="single-staff-name">{staff.name}</div>

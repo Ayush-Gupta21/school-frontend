@@ -46,7 +46,7 @@ const AddAlbumPhoto= ({history}) => {
 
     const onSubmit = (event) => {
         event.preventDefault();
-        if(photoURL == "" || album == ""){
+        if(photoURL === "" || album === ""){
             toast.error("Input Can't Be Empty");
             return;
         }

@@ -21,6 +21,7 @@ const Header = ({history}) => {
         console.log(collapsed);
     }
     const open = collapsed ? "open" : "";
+    const open1 = collapsed ? "open-cover" : "close-cover";
 
     // To fix Navbar-------------------------------
     const [addclass, setAddclass] = useState("")
@@ -36,8 +37,11 @@ const Header = ({history}) => {
         }
     })
 
-    return(
+    return( 
         <div>
+            <div onClick={toggleNavbar} className={`background-cover ${open1}`}
+            >
+            </div>
             <div className={`side_drawer ${open}`}>
             <div><span onClick={toggleNavbar}><i className="fas fa-times"></i>CLOSE</span></div>
             <ul>
@@ -76,12 +80,12 @@ const Header = ({history}) => {
             </ul>
         </div>
             <header >
-                <div className="header">
-                    <Link to="/"><img src={logo} alt="Can't Load"></img></Link>
+                <div className="user-header">
+                    <Link to="/"><img src="https://i.imgur.com/iTLnajN.png" alt="Can't Load"></img></Link>
                     <Hamburger clickMe={toggleNavbar}/>
                 </div>
-                <div className={`header1 ${addclass1}`} >
-                    <Link to="/"><img src={logo} alt="Can't Load"></img></Link>
+                <div className={`user-header1 ${addclass1}`} >
+                    <Link to="/"><img src="https://i.imgur.com/iTLnajN.png" alt="Can't Load"></img></Link>
                     <Hamburger clickMe={toggleNavbar}/>
                 </div>
                 <nav className={addclass}>

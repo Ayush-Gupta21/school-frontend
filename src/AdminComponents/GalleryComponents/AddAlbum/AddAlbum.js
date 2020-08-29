@@ -21,7 +21,7 @@ const AddAlbum= ({history}) => {
 
     const onSubmit = (event) => {
         event.preventDefault();
-        if(name == ""){
+        if(name === ""){
             toast.error("Input Can't Be Empty");
             return;
         }

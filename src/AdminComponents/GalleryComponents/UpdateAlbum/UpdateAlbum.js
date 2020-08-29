@@ -30,7 +30,7 @@ const UpdateAlbum = ({match, history}) => {
 
     useEffect(() => {
         preload(match.params.albumId);
-    }, [])
+    }, [match.params.albumId])
 
     const handleChange = event => {
         setName(event.target.value)
@@ -38,7 +38,7 @@ const UpdateAlbum = ({match, history}) => {
 
     const onSubmit = (event) => {
         event.preventDefault();
-        if(name == ""){
+        if(name === ""){
             toast.error("Input Can't Be Empty");
             return;
         }

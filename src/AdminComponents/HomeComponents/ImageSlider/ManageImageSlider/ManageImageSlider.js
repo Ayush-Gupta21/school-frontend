@@ -117,7 +117,7 @@ const ManageImageSlider = () => {
                 {headerPhotos.map((image, index) => {
                     return(
                         <div key={index} className="each-photo-container">
-                            <img src={image.headerphotoURL}></img>
+                            <img src={image.headerphotoURL} alt="Can't Load"></img>
                             <div onClick={()=>popupFunction(image._id)}><i className="far fa-trash-alt"></i></div>
                         </div>
                     )

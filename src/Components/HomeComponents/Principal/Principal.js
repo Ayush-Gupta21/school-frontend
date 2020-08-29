@@ -2,7 +2,6 @@ import React, {useState, useEffect} from "react";
 import {Link} from "react-router-dom"
 import "./Principal.css";
 import {getPrincipal} from "./helper/PrincipalApis"
-import { API, PRINCIPALID } from "../../../backend";
 import SyncLoader from "react-spinners/SyncLoader";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -61,7 +60,7 @@ const Principal = () => {
             />
             {!loader && <div className="inner-principal-container">
                 <div className="principal-image-container">
-                    <img src={`${principal.principalphotoURL}`}></img>
+                    <img src={`${principal.principalphotoURL}`} alt="Can't Load"></img>
                     <div className="pradeep-singhal">Mr. Pradeep Singhal</div>
                     <div className="principal">Principal</div>
                 </div>

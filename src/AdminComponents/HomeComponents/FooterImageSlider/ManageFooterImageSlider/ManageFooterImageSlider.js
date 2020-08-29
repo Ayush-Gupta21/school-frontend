@@ -114,7 +114,7 @@ const ManageFooterImageSlider = () => {
                 {footerPhotos.map((image, index) => {
                     return(
                         <div key={index} className="each-photo-container">
-                            <img src={image.footerphotoURL}></img>
+                            <img src={image.footerphotoURL} alt="Can't Load"></img>
                             <div onClick={()=>popupFunction(image._id)}><i className="far fa-trash-alt"></i></div>
                         </div>
                     )

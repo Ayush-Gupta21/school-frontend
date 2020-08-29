@@ -62,7 +62,7 @@ const AdminPrincipalPage = () => {
         />
         {!loader && <div className="principal-page-container">
             <div className="principal-page-image-container">
-                <img src={`${principal.principalphotoURL}`}></img>
+                <img src={`${principal.principalphotoURL}`} alt="Can't Load"></img>
             </div>
             <p>{principal.content}</p>
             <p id="principal">Mr. Pradeep Singhal</p>

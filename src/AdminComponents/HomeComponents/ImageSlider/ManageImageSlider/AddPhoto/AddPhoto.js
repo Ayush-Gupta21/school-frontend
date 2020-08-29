@@ -22,7 +22,7 @@ const AddPhoto= ({history}) => {
 
     const onSubmit = (event) => {
         event.preventDefault();
-        if(headerphotoURL == ""){
+        if(headerphotoURL === ""){
             toast.error("Please add URL");
             return;
         }

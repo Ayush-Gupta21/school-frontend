@@ -50,7 +50,7 @@ const NoticePage = () => {
     // ---------------------------------------------------------
 
     // Pagination-----------------------------------------------
-    const [showPerPage, setShowPerPage] = useState(8);
+    const showPerPage = 8;
     const [pagination, setPagination] = useState({
       start: 0,
       end: showPerPage,

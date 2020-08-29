@@ -25,7 +25,7 @@ const AddQuote= ({history}) => {
 
     const onSubmit = (event) => {
         event.preventDefault();
-        if(quote == "" || author == ""){
+        if(quote === "" || author === ""){
             toast.error("Input Can't Be Empty");
             return;
         }

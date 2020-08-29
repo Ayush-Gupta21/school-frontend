@@ -32,7 +32,7 @@ const UpdateNotice = ({match, history}) => {
 
     useEffect(() => {
         preload(match.params.noticeId);
-    }, [])
+    }, [match.params.noticeId])
 
     const handleChange = event => {
         setNoticeHeading(event.target.value)
@@ -43,7 +43,7 @@ const UpdateNotice = ({match, history}) => {
 
     const onSubmit = (event) => {
         event.preventDefault();
-        if(noticeHeading == "" || noticeContent == ""){
+        if(noticeHeading === "" || noticeContent === ""){
             toast.error("Input Can't Be Empty");
             return;
         }

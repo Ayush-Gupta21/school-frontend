@@ -62,7 +62,7 @@ const Principal = () => {
             />
             {!loader && <div className="inner-principal-container">
                 <div className="principal-image-container">
-                    <img src={`${principal.principalphotoURL}`}></img>
+                    <img src={`${principal.principalphotoURL}`} alt="Can't Load"></img>
                     <div className="pradeep-singhal">Mr. Pradeep Singhal</div>
                     <div className="principal">Principal</div>
                 </div>

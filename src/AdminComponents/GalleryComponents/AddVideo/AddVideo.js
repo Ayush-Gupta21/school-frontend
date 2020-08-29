@@ -46,7 +46,7 @@ const AddAlbumVideo= ({history}) => {
 
     const onSubmit = (event) => {
         event.preventDefault();
-        if(videoURL == "" || album == ""){
+        if(videoURL === "" || album === ""){
             toast.error("Input Can't Be Empty");
             return;
         }
