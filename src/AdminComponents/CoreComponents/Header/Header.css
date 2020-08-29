@@ -30,8 +30,8 @@
 }
 
 .header img{
-    width: 600px;
-    margin: 0.7% auto auto 1%;
+    width: 500px;
+    margin: 0.5% auto auto 1%;
 }
 
 nav{
@@ -90,8 +90,8 @@ header ul li .nav-link:hover{
     }
     
     .header img{
-        width: 500px;
-        margin: 0.5% auto auto 1%;
+        width: 400px;
+        margin: 0.7% auto auto 1%;
     }
 }
 
