@@ -58,7 +58,6 @@
         margin: auto;
         display: grid;
         grid-template-columns: auto;
-        grid-gap: 10px;
     }
     
     .message-heading-outer-container{
@@ -103,7 +102,6 @@
         margin: auto;
         display: grid;
         grid-template-columns: auto;
-        grid-gap: 10px;
     }
     .message-container{
         color: rgb(99, 99, 99);
