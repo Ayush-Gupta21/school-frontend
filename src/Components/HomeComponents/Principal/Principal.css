@@ -58,6 +58,7 @@
         margin: auto;
         display: grid;
         grid-template-columns: auto;
+        margin-bottom: 30px;
     }
     
     .message-heading-outer-container{
